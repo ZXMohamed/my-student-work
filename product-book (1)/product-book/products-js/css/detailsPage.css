@@ -1,0 +1,227 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f5f8ff;
+    height: 4000px;
+}
+/* ................................ */
+/* Style Header */ 
+header{
+    background-image: linear-gradient(315deg, #fdb813 0%, #788cb6 75%);
+    /*
+    background-color: #20bf55;
+    background-image: linear-gradient(315deg, #01baef 0%, #20bf55 74%);
+    background: linear-gradient(#fcf48d , #552003);
+    */
+}
+/* LOGO style */
+header .navbar-brand{
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* navbar links Style */
+header .navbar-nav .nav-item{
+    padding-left: 14px;
+}
+header .navbar-nav .active .nav-link{
+    color: #ecbd4f;
+}
+header .navbar-nav .nav-link{
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+header .navbar-nav .nav-link:hover{
+    color: #ecbd4f;
+}
+.dropdown-menu{
+    background: #fff;
+}
+.dropdown-menu .dropdown-item{
+    color: rgb(129, 129, 129);
+    font-weight: bold;
+    font-size: 16px;
+}
+.dropdown-menu .dropdown-item:hover{
+    background: #788cb6 ;
+    color: #fcf48d ;
+}
+header .CartLike{
+    margin-left: 20px;
+    position: relative;
+}
+header .CartLike .cartlink{
+    padding-right: 10px;
+}
+header .CartLike .cartDiv{
+    position: relative;
+}
+header .CartLike .cartDiv .countCart{
+    font-size: 10px;
+    font-weight: 700;
+    position: absolute;
+    left: 10px;
+    top: -7px;
+    text-align: center;
+    line-height: 19.5px;
+    background-color: #000;
+    color: #fff;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+/* toggler icon style */
+header .navbar-toggler{
+    color: #fff ;
+}
+header .navbar-toggler .fa-bars{
+    font-size: 28px;
+}
+
+
+
+
+
+
+.details {
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+@media only screen and (max-width:767px){
+    .details{
+        height: calc(100% - 50px);
+        margin-top:50px;
+    }
+}
+@media only screen and (max-width:375px){
+    .details{
+        height: calc(100% - 100px);
+        margin-top:30px;
+    }
+}
+.colors  {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.product-title, .price, .sizes, .colors {
+    text-transform: UPPERCASE;
+    font-weight: bold; 
+}
+
+.checked, .price span {
+    color: #ff9f1a; 
+}
+
+.product-title, .rating, .product-description, .price, .vote, .sizes {
+    margin-bottom: 15px; 
+}
+
+.product-title {
+    margin-top: 0; 
+}
+
+.size {
+    margin-right: 10px;
+}
+.size:first-of-type {
+    margin-left: 40px;
+}
+
+.color {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    height: 2em;
+    width: 2em;
+    border-radius: 2px;
+}
+.color:first-of-type{
+    margin-left: 20px;
+}
+
+.add-to-cart, .like{
+    background: #ff9f1a;
+    padding: 1.2em 1.5em;
+    border: none;
+    text-transform: UPPERCASE;
+    font-weight: bold;
+    color: #fff;
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease; 
+}
+.add-to-cart:hover, .like:hover {
+    background: #b36800;
+    color: #fff; 
+}
+
+.not-available {
+    text-align: center;
+    line-height: 2em;
+}
+.not-available:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00d";
+    color: #fff; 
+}
+
+.orange {
+    background: #ff9f1a; 
+}
+
+.green {
+    background: #85ad00; 
+}
+
+.blue {
+    background: #0076ad; 
+}
+
+.tooltip-inner {
+    padding: 1.3em; 
+}
+
+@-webkit-keyframes opacity {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(3);
+        transform: scale(3); 
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1); 
+    } 
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(3);
+        transform: scale(3); 
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1); 
+    } 
+}

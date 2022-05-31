@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap4 css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Fontawesome css -->
+    <link href="css/all.min.css" rel="stylesheet">
+    <!-- css style file -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/detailsPage.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body onload="showDetails()">
+
+    <!-- ........................................................ -->
+    <!-- Start Header  -->
+    <!-- ........................................................ -->
+    <header id="header">
+        <div class="overlay"></div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent shadow-0 fixed-top">
+          <div class="container">
+          <a class="navbar-brand" href="#">Web<span>Travel</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span id='navbar-toggler-icon' class="navbar-toggler-icon imgmenu">
+            </span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active bg-transparent">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Destination</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Special Offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Subscription</a>
+              </li>
+              
+              
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <button class="btn nav-book-btn my-2 my-sm-0" type="submit">book now</button>
+            </form>
+          </div>
+        </div>
+        </nav>
+    
+        <div class="main-header">
+          <div class="container">
+            <!-- <h2>Welcome To The Travel Agency </h2> -->
+            <h1>Book your ticket to travel to<span id="Book-your-ticket"></span></h1>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut omnis beatae quam quibusdam facere expedita explicabo eaque non sit. Amet vitae exercitationem ad rerum consequuntur numquam magni nemo dolorem, itaque  -->
+              <!-- eius perferendis praesentium consequatur. Dolores, nihil, molestiae sunt tenetur aut similique nostrum deleniti amet  -->
+              <!-- minima. Esse magnam inventore, ea.</p> -->
+            <!-- <a href="#" class="book-now-btn">Book Now!</a> -->
+          </div>
+        </div>
+       
+        <div class="waves">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,224L60,240C120,256,240,288,360,293.3C480,299,600,277,720,256C840,235,960,213,1080,218.7C1200,224,1320,256,1380,272L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- ..................................................... -->
+
+
+    <!-- ........................................................ -->
+    <!-- Start section > form  -->
+    <!-- ........................................................ -->
+    <section class="forma">
+      <div class="container">
+        <form class="main-form">
+          <h3>Find Your Tour</h3>
+          <div class="row">
+            <div class="col-md-9">
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                  <label>First Name</label>
+                  <input id='firstName' class="form-control" placeholder="" type="text" name="" required>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                  <label>Last Name</label>
+                  <input id="lastName" class="form-control" placeholder="" type="text" name="Any" required>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                  <label>Email</label>
+                  <input id="email" class="form-control" placeholder="ex@gmail.com" type="email" name="email" required>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                  <label>Country</label>
+                  <select id="form-control" class="form-control" name="Country">
+                    <option>Country</option>
+                  </select>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                  <label>Date</label>
+                  <input id='date-input' class="form-control" placeholder="Any" type="date" name="Any" required>
+                  <div id="result"></div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                  <label>Max Price</label>
+                  <input id='max-price' class="form-control" placeholder="00.0" type="text" name="00.0" required>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 col-submit-btn">
+              <button href="#" class="submit-btn" id="submit-btn" type="submit">search</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- End section > form -->
+    <!-- ..................................................... -->
+
+
+    
+    
+
+
+    <!-- jquery js -->
+    <!-- popper js -->
+    <!--  bootstrap js -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Fontawesome js -->
+    <script src="js/all.min.js"></script>
+    <!-- main js file -->
+    <script src="js/mainjs.js"></script>
+</body>
+</html>

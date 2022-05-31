@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nada.css">
+    <title>test</title>
+</head>
+<body>
+    
+<div class="login-wrap">
+
+    <div class="login-html">
+        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">sign</label>
+        <input id="tab-2" type="radio" name="tab" class="sign-value"><label for="tab-2" class="tab">table</label>
+        <div class="login-form">
+            <form action="test.html" id="form" >
+                <div class="sign-in-htm">
+                    <div class="group">
+                        <label for="user" class="label">first name</label>
+                        <input id="user" type="text" class="input" required minlength="3" maxlength="20" onkeypress=" allowOnlyLetters(event,this)"  >
+                        <p id="error"></p>
+
+
+                    </div>
+                    <div class="group">
+                        <label for="user" class="label">last name</label>
+                        <input id="user2" type="text" class="input" required minlength="3" maxlength="20" >
+                        <p id="error2"></p>
+
+
+                    </div>
+                    <div class="group">
+                        <label for="user" class="label">address</label>
+                        <input id="user3" type="text" class="input" required >
+                        <p id="error3"></p>
+
+                    </div>
+
+
+                    <div class="group">
+                        <label for="age" class="label">Enter your age </label>
+                        <input type="number" class="age" name="num" id="age" required min="1" max="100"  >
+                        <p id="wrong"></p>
+
+                    </div>
+                    <div class="group">
+                        <label for="user" class="label">interest</label>
+                        <br>
+                        <input id="check" type="checkbox" class="check" name="hobby">
+                        <label for="checkbox"> football</label>
+                        <input id="check" type="checkbox" class="check" name="hobby">
+                        <label for="checkbox">reading</label>
+                        <input id="check" type="checkbox" class="check" name="hobby">
+                        <label for="checkbox"> drawing</label>
+                        <span id="message"></apan>
+
+                    </div>
+                    <div class="group">
+                        <label for="gender" class="label">gender</label>
+                        <br>
+                        <input type="radio" name="gender" value="male">male
+                        <input type="radio" name="gender" value="female">female
+                        <p id="wrong22"></p><br>
+                    </div>
+
+                    <div class="group">
+                        <input type="submit" class="button" value="Submit" onclick="return radioValidation();"
+                            onclick="evalGroup()" id="submite">
+                        <input type="reset" class="button" value="reset">
+                        <button class="button" value="add" id="add" onclick="add()">add</button>
+                    </div>
+
+
+                </div>
+                <div class="sign-value-htm" id="sign-value-htm">
+                    <table id="mytable" border="1">
+                        <tr>
+                            <th>full name</th>
+                            <th>age</th>
+                        </tr>
+                        <tr>
+                            <td id="name"></td>
+                            <td id="rage"></td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+
+
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

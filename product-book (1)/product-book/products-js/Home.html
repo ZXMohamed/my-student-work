@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap4 css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- mdb css -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- fontawesome css -->
+    <link href="css/all.min.css" rel="stylesheet">
+    <!-- sal animation css -->
+    <link href="css/sal.css" rel="stylesheet">
+    <!-- Wow js -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- css style -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>products</title>
+</head>
+
+
+<body>
+  <!-- Start Header -->
+  <header>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg shadow-none">
+      <div class="container">
+        <!-- LOGO -->
+        <a class="navbar-brand" href="#">LOGO</a>
+        <!-- toggler icon -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <!-- links items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Courcse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">price</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pages</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown link
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Fact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+          <div class="CartLike d-flex">
+            <div class="cartDiv">
+              <a href="cartPage.html" class="cartlink"><img src="./images/cart-30-xxl.png" style="height: 1.50em;"></a>
+              <span class="countCart" id="countCart">0</span>
+            </div>
+            <div class="heartDiv">
+              <a href="#" class="heartlink"><img src="./images/icons8-heart-30.png" style="height: 1.50em;"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- main content Header -->
+    <div class="main-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 text-center info-book">
+            <h6  data-sal="slide-right"
+            style="--sal-duration: 0.75s; --sal-delay: 0.25s;">AUTHOR: <span>Developerd and Designerd</span></h6>
+            <h2 class="h1" data-sal="slide-right"
+            style="--sal-duration: 0.85s; --sal-delay: 0.35s;">MAKE RADING FUN</h2><!-- EXCITING ADVENTURE -->
+            <p class="text" data-sal="slide-right"
+            style="--sal-duration: 0.95s; --sal-delay: 0.45s;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dignissimos ut aliquam
+              quos accusamus molestias, obcaecati vitae deserunt non, dolore officiis.</p>
+            <button class="btn btn-light pr-5 pl-5" data-sal="slide-down"
+            style="--sal-duration: 0.90s; --sal-delay: 0.85s;">By now for $5.99</button>
+          </div>
+          <div class="col-md-5 text-center">
+            <img src="images/book8.png" alt="book" class="w-100 h-100 img-header">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+  <!-- ------------------------------------------------------------------  -->
+
+
+    <!-- ..............................................  -->
+    <div class="wrapper">
+        <h1 class="mb-5">book popular</h1>
+        <div id="buttons" class="buttons">
+          <button class="button-value" onclick="filterProduct('all')">All</button>
+          <button class="button-value" onclick="filterProduct('Historical')">
+            Historical
+          </button>
+          <button class="button-value" onclick="filterProduct('GraphicNovel')">
+            GraphicNovel
+          </button>
+          <button class="button-value" onclick="filterProduct('Fantasy')">
+            Fantasy
+          </button>
+          <button class="button-value" onclick="filterProduct('Classics')">
+            Classics
+          </button>
+        </div>
+        <div id="div-books"></div>
+    </div>
+    
+    <!-- jquery js -->
+    <!-- popper js -->
+    <!--  bootstrap js -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--  mdb js -->
+    <script src="js/mdb.min.js"></script>
+    <!-- fontawesome js -->
+    <script src="js/all.min.js"></script>
+    <!-- sal animation js -->
+    <script src="js/sal.js"></script>
+    <script>
+        // sal animation code
+        sal({
+            threshold: 1,
+            once: false,
+        });
+    </script>
+    <!-- Wow js -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- main js file -->
+    <script src="js/mainjs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------------------------------
+    start style dark mode
+--------------------------------------*/
+.body {
+    background-color: #f5f8ff;
+}
+.switch {
+    position: relative;
+    /* display: inline-block; */
+    width: 60px;
+    height: 34px;
+}
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #2196F3;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+} 
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}  
+/* class darkmode from js */
+.darkmode {
+    background-color: black !important;
+    color: white !important;
+}
+
+
+/*-------------------------------------
+    start style section >> sec-get-Gpa
+                section >> sec-get-name-day
+--------------------------------------*/
+.con-secGpa-secNameDay{
+    margin-bottom: 180px;
+    margin-top: 100px;
+}
+
+.sec-get-Gpa,
+.sec-get-name-day{
+    height: 300px;
+     display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    background: linear-gradient(#e66465, #9198e5);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.sec-get-name-day{
+    background: linear-gradient(#9198e5, #e66465);
+}
+.sec-get-Gpa form,
+.sec-get-name-day form{
+    display: flex;
+    align-items: center;
+}
+  
+.sec-get-Gpa input,
+.sec-get-name-day input{
+    border: 0;
+    padding: 4px 18px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.sec-get-Gpa input{
+    width: 165px !important;
+}
+
+.sec-get-Gpa p,
+.sec-get-name-day p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+@media(max-width: 394px){
+    .sec-get-Gpa form,
+    .sec-get-name-day form{
+        flex-direction: column;
+    }
+    .sec-get-Gpa{
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
+
+/*-------------------------------------
+    start style section >> sec-show-hide-img
+--------------------------------------*/
+
+.pictures{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pictures img{
+    width: 13.666%;
+    margin: 0 1%;
+}
+.picture{
+    height: 300px;
+    width: 50%;
+}
+.picture img{
+    width: 100%;
+    height: 100%;
+}
+
+/* class from js */
+.img-active{
+    box-shadow: 0 0 5px #fc2133, 0 0 5px #fc2133, 0 0 5px #fc2133 !important;
+}
+
+
+
+/*-------------------------------------
+    start style section >> form-show-data-into-alert
+--------------------------------------*/
+
+.form-show-data-into-alert{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.form-show-data-into-alert form{
+    width: 600px;
+    padding: 30px 50px;
+    background-color: aqua;
+}
+.form-floating>label {
+    left: 10px;
+    color: #626266;
+}
+
+
+
+
+

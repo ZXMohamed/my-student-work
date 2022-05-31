@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- boostrap linkage -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+    <!-- boostrap css linkage -->
+    <link rel="stylesheet" href="../CSS/font-awesome.min.css" />
+    <!-- something -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
+    <!-- css linkage -->
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>Task Three Javascript</title>
+</head>
+
+<body>
+    <!-- nav bar section -->
+    <nav class="navbar navbar-expand-lg navbar-red navbar-dark fixed-top">
+        <div class="wrapper"></div>
+        <div class="container-fluid all-show">
+            <a class="navbar-brand" href="#">OSTECH <i class="fa fa-codepen"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item"></li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">book flight</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">contact us</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-search" onclick="myFunction()"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- home-section -->
+    <section class="home-section">
+        <div class="welcoming-message">
+            <h1>Be Privileged with Privilege Club</h1>
+            <p>Member Exclusive: Up to <span>12%</span> off Business Class</p>
+            <a href="#">book now</a>
+        </div>
+    </section>
+    <!-- aboutUs-section -->
+    <section class="aboutUs-section">
+        <div class="section-header">
+            <h2>Travel safely with us</h2>
+            <span></span>
+            <p>
+                As one of the largest and most experienced global airlines throughout the COVID-19 crisis, you can rely on us <br /> to take you on your next journey safely.
+            </p>
+        </div>
+        <div class="section-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 d-flex justify-content-center">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="card-img pt-2 pb-3">
+                                    <img src="../IMG/about-us-section/Travel requirements.jpg" alt="Travel requirements" />
+                                </div>
+                                <div class="name h5">Travel requirements</div>
+                                <div class="testimonial">
+                                    I made bacck the purchase price in just 48 hours ! Thank you for making pain less, pleasant. The service was execellent. I will refer everyone I know
+                                    <a href="#">learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="card-img pt-2 pb-3">
+                                    <img src="../IMG/about-us-section/vip supports.jpg" alt="vip supports" />
+                                </div>
+                                <div class="name h5">vip supports</div>
+                                <div class="testimonial">
+                                    I made bacck the purchase price in just 48 hours ! Thank you for making pain less, pleasant. The service was execellent. I will refer everyone I know
+                                    <a href="#">learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="card-img pt-2 pb-3">
+                                    <img src="../IMG/about-us-section/entry requirements.jpeg" alt="entry requirements" />
+                                </div>
+                                <div class="name h5">entry requirements</div>
+                                <div class="testimonial">
+                                    I made bacck the purchase price in just 48 hours ! Thank you for making pain less, pleasant. The service was execellent. I will refer everyone I know
+                                    <a href="#">learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 d-flex justify-content-center">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="card-img pt-2 pb-3">
+                                    <img src="../IMG/about-us-section/Guarantee flexibility.jpg" alt="Guarantee flexibility" />
+                                </div>
+                                <div class="name h5">Guarantee flexibility</div>
+                                <div class="testimonial">
+                                    I made bacck the purchase price in just 48 hours ! Thank you for making pain less, pleasant. The service was execellent. I will refer everyone I know
+                                    <a href="#">learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="card-img pt-2 pb-3">
+                                    <img src="../IMG/about-us-section/plane your next trip.jpg" alt="" />
+                                </div>
+                                <div class="name h5">plane your next trip</div>
+                                <div class="testimonial">
+                                    I made bacck the purchase price in just 48 hours ! Thank you for making pain less, pleasant. The service was execellent. I will refer everyone I know
+                                    <a href="#">learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="card-img pt-2 pb-3">
+                                    <img src="../IMG/about-us-section/safety measures.jpg" alt="safety measures" />
+                                </div>
+                                <div class="name h5">safety measures</div>
+                                <div class="testimonial">
+                                    I made bacck the purchase price in just 48 hours ! Thank you for making pain less, pleasant. The service was execellent. I will refer everyone I know
+                                    <a href="#">learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service section -->
+    <section class="services-section">
+        <div class="section-header">
+            <h2>Enjoy our Services</h2>
+            <span></span>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus reprehenderit explicabo ipsum quos minima nam <br /> tempore animi fuga facilis officiis.
+            </p>
+            <div class="section-content">
+                <div class="container mt-5">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-3 offset-md-1 rounded bg-white border p-4 text-center">
+                            <div class="carousel slide" id="mySlider">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#mySlider" data-slide-to="0" class="active"></li>
+                                    <li data-target="#mySlider" data-slide-to="1"></li>
+                                    <li data-target="#mySlider" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../IMG/service section/Business class.jpeg" alt="Business class" />
+                                        <div class="py-4 blue-text">
+                                            <h4 class="font-weight-bold">First class</h4>
+                                            <p>IN REAL TIME</p>
+                                            <p>
+                                                we make time tracking so simple you'll actually use it. But even if you forget, our tracking reminders.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../IMG/service section/Economic class.jpeg" alt="Economic class" />
+                                        <div class="pt-4 blue-text d-flex flex-column pb-2">
+                                            <h4 class="font-weight-bold">Business Class</h4>
+                                            <p>MAXIMUM SALES</p>
+                                            <p>
+                                                know how much your time is worth? Break down your hours by projects, clients and tasks to see what's making you money.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../IMG/service section/vip class.jpeg" alt="" />
+                                        <div class="pt-4 blue-text">
+                                            <h4 class="font-weight-bold">Economic Class</h4>
+                                            <p>IS REQUIRED</p>
+                                            <p>
+                                                Start tracking in your browser, stop the timer o your phone -all your time entires are synced between the phone apps, desktop apps.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 offset-md-1 rounded bg-white border p-4 text-center">
+                            <div class="carousel slide" id="mySlider1">
+                                <ol class="carousel-indicators rounded-circle">
+                                    <li data-target="#mySlider1" data-slide-to="0"></li>
+                                    <li data-target="#mySlider1" data-slide-to="1" class="active"></li>
+                                    <li data-target="#mySlider1" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item">
+                                        <img src="../IMG/service section/Business class.jpeg" alt="Business class" width="200" />
+                                        <div class="py-4 blue-text">
+                                            <h4 class="font-weight-bold">Business class</h4>
+                                            <p>IN REAL TIME</p>
+                                            <p>
+                                                we make time tracking so simple you'll actually use it. But even if you forget, our tracking reminders.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="../IMG/service section/Economic class.jpeg" alt="Economic class" width="200" />
+                                        <div class="pt-4 blue-text d-flex flex-column pb-2">
+                                            <h4 class="font-weight-bold">Sales Track</h4>
+                                            <p>MAXIMUM SALES</p>
+                                            <p>
+                                                know how much your time is worth? Break down your hours by projects, clients and tasks to see what's making you money.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../IMG/service section/vip class.jpeg" alt="vip class" width="200" />
+                                        <div class="pt-4 blue-text">
+                                            <h4 class="font-weight-bold">Stategy</h4>
+                                            <p>IS REQUIRED</p>
+                                            <p>
+                                                Start tracking in your browser, stop the timer o your phone -all your time entires are synced between the phone apps, desktop apps.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 offset-md-1 rounded bg-white border p-4 text-center">
+                            <div class="carousel slide" id="mySlider2">
+                                <ol class="carousel-indicators rounded-circle">
+                                    <li data-target="#mySlider2" data-slide-to="0"></li>
+                                    <li data-target="#mySlider2" data-slide-to="1"></li>
+                                    <li data-target="#mySlider2" data-slide-to="2" class="active"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item">
+                                        <img src="../IMG/service section/Economic class.jpeg" alt="Economic class" width="200" />
+                                        <div class="py-4 blue-text">
+                                            <h4 class="font-weight-bold">Business class</h4>
+                                            <p>Economic class</p>
+                                            <p>
+                                                we make time tracking so simple you'll actually use it. But even if you forget, our tracking reminders.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../IMG/service section/vip class.jpeg" alt="section/vip class" width="200" />
+                                        <div class="pt-4 blue-text d-flex flex-column pb-2">
+                                            <h4 class="font-weight-bold">first class</h4>
+                                            <p>MAXIMUM SALES</p>
+                                            <p>
+                                                know how much your time is worth? Break down your hours by projects, clients and tasks to see what's making you money.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="../IMG/service section/Business class.jpeg" alt="" width="200" />
+                                        <div class="pt-4 blue-text">
+                                            <h4 class="font-weight-bold">Economic class</h4>
+                                            <p>IS REQUIRED</p>
+                                            <p>
+                                                Start tracking in your browser, stop the timer o your phone -all your time entires are synced between the phone apps, desktop apps.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-3 offset-md-1 rounded bg-white border p-4 text-center">
+                            <div class="carousel slide" id="mySlider">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#mySlider" data-slide-to="0" class="active"></li>
+                                    <li data-target="#mySlider" data-slide-to="1"></li>
+                                    <li data-target="#mySlider" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../IMG/service section/Business class.jpeg" alt="Business class" />
+                                        <div class="py-4 blue-text">
+                                            <h4 class="font-weight-bold">First class</h4>
+                                            <p>IN REAL TIME</p>
+                                            <p>
+                                                we make time tracking so simple you'll actually use it. But even if you forget, our tracking reminders.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../IMG/service section/Economic class.jpeg" alt="Economic class" />
+                                        <div class="pt-4 blue-text d-flex flex-column pb-2">
+                                            <h4 class="font-weight-bold">Business Class</h4>
+                                            <p>MAXIMUM SALES</p>
+                                            <p>
+                                                know how much your time is worth? Break down your hours by projects, clients and tasks to see what's making you money.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../IMG/service section/vip class.jpeg" alt="" />
+                                        <div class="pt-4 blue-text">
+                                            <h4 class="font-weight-bold">Economic Class</h4>
+                                            <p>IS REQUIRED</p>
+                                            <p>
+                                                Start tracking in your browser, stop the timer o your phone -all your time entires are synced between the phone apps, desktop apps.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 offset-md-1 rounded bg-white border p-4 text-center">
+                            <div class="carousel slide" id="mySlider1">
+                                <ol class="carousel-indicators rounded-circle">
+                                    <li data-target="#mySlider1" data-slide-to="0"></li>
+                                    <li data-target="#mySlider1" data-slide-to="1" class="active"></li>
+                                    <li data-target="#mySlider1" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item">
+                                        <img src="../IMG/service section/Business class.jpeg" alt="Business class" width="200" />
+                                        <div class="py-4 blue-text">
+                                            <h4 class="font-weight-bold">Business class</h4>
+                                            <p>IN REAL TIME</p>
+                                            <p>
+                                                we make time tracking so simple you'll actually use it. But even if you forget, our tracking reminders.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="../IMG/service section/Economic class.jpeg" alt="Economic class" width="200" />
+                                        <div class="pt-4 blue-text d-flex flex-column pb-2">
+                                            <h4 class="font-weight-bold">Sales Track</h4>
+                                            <p>MAXIMUM SALES</p>
+                                            <p>
+                                                know how much your time is worth? Break down your hours by projects, clients and tasks to see what's making you money.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../IMG/service section/vip class.jpeg" alt="vip class" width="200" />
+                                        <div class="pt-4 blue-text">
+                                            <h4 class="font-weight-bold">Stategy</h4>
+                                            <p>IS REQUIRED</p>
+                                            <p>
+                                                Start tracking in your browser, stop the timer o your phone -all your time entires are synced between the phone apps, desktop apps.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 offset-md-1 rounded bg-white border p-4 text-center">
+                            <div class="carousel slide" id="mySlider2">
+                                <ol class="carousel-indicators rounded-circle">
+                                    <li data-target="#mySlider2" data-slide-to="0"></li>
+                                    <li data-target="#mySlider2" data-slide-to="1"></li>
+                                    <li data-target="#mySlider2" data-slide-to="2" class="active"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item">
+                                        <img src="../IMG/service section/Economic class.jpeg" alt="Economic class" width="200" />
+                                        <div class="py-4 blue-text">
+                                            <h4 class="font-weight-bold">Business class</h4>
+                                            <p>Economic class</p>
+                                            <p>
+                                                we make time tracking so simple you'll actually use it. But even if you forget, our tracking reminders.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../IMG/service section/vip class.jpeg" alt="section/vip class" width="200" />
+                                        <div class="pt-4 blue-text d-flex flex-column pb-2">
+                                            <h4 class="font-weight-bold">first class</h4>
+                                            <p>MAXIMUM SALES</p>
+                                            <p>
+                                                know how much your time is worth? Break down your hours by projects, clients and tasks to see what's making you money.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="../IMG/service section/Business class.jpeg" alt="" width="200" />
+                                        <div class="pt-4 blue-text">
+                                            <h4 class="font-weight-bold">Economic class</h4>
+                                            <p>IS REQUIRED</p>
+                                            <p>
+                                                Start tracking in your browser, stop the timer o your phone -all your time entires are synced between the phone apps, desktop apps.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- booking-flight-section -->
+    <div class="booking-flight-section">
+        <div class="section-header">
+            <h2>Let's go places together</h2>
+            <span></span>
+            <p>
+                Discover the latest offers and news and start planning your next trip with us.
+            </p>
+            <div class="section-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 Services-tab item">
+                            <div class="folded-corner service_tab_1">
+                                <div class="text">
+                                    <i class=""><img src="../IMG/book flight section/Los Angeles.jpg" alt="Los Angeles"
+                                            draggable="false" /></i>
+                                    <div class="flight-detailies">
+                                        <h5 id="losAngelesAdress">Address:</h5>
+                                        <h5 id="losAngelesAdressDate">Date:</h5>
+                                        <h5 id="losAngelesAdressType">Class type:</h5>
+                                        <h5 id="losAngelesAdressPrice">Price:</h5>
+                                        <button class="btn" onmouseenter="showDetailesOne()" onmouseleave="hidthedetailesOne()">
+                                            book now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 Services-tab item">
+                            <div class="folded-corner service_tab_1">
+                                <div class="text">
+                                    <i class=""><img src="../IMG/book flight section/Doha.jpg" draggable="false"
+                                            alt="Doha" /></i>
+                                    <div class="flight-detailies">
+                                        <h5 id="dohaAdress">Address:</h5>
+                                        <h5 id="dohaDate">Date:</h5>
+                                        <h5 id="dohaType">Class type:</h5>
+                                        <h5 id="dohaPrice">Price:</h5>
+                                        <button class="btn" onmouseenter="showdetailesTwo()" onmouseleave="hiddetaileTwo()">book now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 Services-tab item">
+                            <div class="folded-corner service_tab_1">
+                                <div class="text">
+                                    <i class=""><img src="../IMG/book flight section/New york.jpg" draggable="false"
+                                            alt="New york" /></i>
+                                    <div class="flight-detailies">
+                                        <h5 id="newYourkAdress">Address:</h5>
+                                        <h5 id="newYourkDate">Date:</h5>
+                                        <h5 id="newYourkType">Class type:</h5>
+                                        <h5 id="newYourkPrice">Price:</h5>
+                                        <button class="btn" onmouseenter="showdetailesThree()" onmouseleave="hiddetailesThree()">book now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" row ">
+                        <div class=" col-md-4 Services-tab item ">
+                            <div class=" folded-corner service_tab_1 ">
+                                <div class=" text ">
+                                    <i class=" "><img src=" ../IMG/book flight section/Edinburgh.jpg "
+                                            draggable=" false " alt=" Edinburgh " /></i>
+                                    <div class=" flight-detailies ">
+                                        <h5 id="EdinburghAdress">Address:</h5>
+                                        <h5 id="EdinburghDate">Date:</h5>
+                                        <h5 id="EdinburghType">Class type:</h5>
+                                        <h5 id="EdinburghPrice">Price:</h5>
+                                        <button class=" btn " onmouseenter="showdetailesFour()" onmouseleave="hiddetailesFour()">book now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 Services-tab item ">
+                            <div class=" folded-corner service_tab_1 ">
+                                <div class=" text ">
+                                    <i class=" "><img src=" ../IMG/book flight section/Istanbul.jpg "
+                                            draggable=" false " alt=" Istanbul " /></i>
+                                    <div class=" flight-detailies ">
+                                        <h5 id="IstanbulAdress">Address:</h5>
+                                        <h5 id="IstanbulDate">Date:</h5>
+                                        <h5 id="IstanbulType">Class type:</h5>
+                                        <h5 id="IstanbulPrice">Price:</h5>
+                                        <button class=" btn " onmouseenter="showdetailesfive()" onmouseleave="hiddetailesfive()">book now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-md-4 Services-tab item ">
+                            <div class=" folded-corner service_tab_1 ">
+                                <div class=" text ">
+                                    <i class=" " style=" padding-bottom: 10px "><img
+                                            src=" ../IMG/book flight section/Manchester.jpg " draggable=" false "
+                                            alt=" Manchester " /></i>
+                                    <div class=" flight-detailies ">
+                                        <h5 id="LosAngelesAddress">Address:</h5>
+                                        <h5 id="LosAngelesDate">Date:</h5>
+                                        <h5 id="LosAngelesType">Class type:</h5>
+                                        <h5 id="LosAngelesPrice">Price:</h5>
+                                        <button class=" btn " onmouseenter="showdetailessix()" onmouseleave="hiddetailessix()">book now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact us section -->
+    <section class="contactus-section">
+        <div class="section-header">
+            <h2>Contact us</h2>
+            <span></span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sit odio et explicabo praesentium quam sed doloribus maxime tenetur ipsa.</p>
+        </div>
+        <div class="section-content">
+            <div class="container d-flex justify-content-center">
+                <div class="row my-2 mx-2">
+                    <div class="col-md-6"> <img src="https://png.pngtree.com/png-vector/20190725/ourlarge/pngtree-message-icon-design-vector-png-image_1587713.jpg" alt="IMG"> </div>
+                    <!--col-->
+                    <div class="col-md-6">
+                        <h2 class="form-title">Contact us</h2>
+                        <p class="justify text-muted">Have an enquiry or would like to give us feedback?<br>Fill out the form below to contact our team.</p>
+                        <form action="#">
+                            <div class="form-group pt-2 pl-1"> <label for="FirstName">First name:</label> <input type="text" class="form-control" id="FirstName"> </div>
+                            <div class="form-group pt-2 pl-1"> <label for="LastName">Last name:</label> <input type="text" class="form-control" id="LastName"> </div>
+                            <div class="form-group pt-2 pl-1"> <label for="birthdate">birthdate:</label> <input type="date" class="form-control" id="birthdate"> </div>
+                            <div class="form-group pl-1"> <label for="email">Your email address:</label> <input type="email" class="form-control" id="email"> </div>
+                            <div class="form-group pl-1"> <label for="country">country:</label> <input type="text" class="form-control" id="country"> </div>
+                            <div class="row">
+                                <div class="col-md-3 offset-md-9"><button type="submit" class="btn btn-primary" onclick="myFormFunction()">Send</button></div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <!--col-->
+                </div>
+                <!--row-->
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-dark">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 item">
+                            <h3>Services</h3>
+                            <ul>
+                                <li><a href="#">Web design</a></li>
+                                <li><a href="#">Development</a></li>
+                                <li><a href="#">Hosting</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 item">
+                            <h3>Services</h3>
+                            <ul>
+                                <li><a href="#">Web design</a></li>
+                                <li><a href="#">Development</a></li>
+                                <li><a href="#">Hosting</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 item">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 item text">
+                            <h3>OSTECH.com</h3>
+                            <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus.</p>
+                        </div>
+                        <div class="col item social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i
+                                    class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-youtube"></i></a><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-google"></i></a>
+                        </div>
+                    </div>
+                    <p class="copyright">OSTECH.com © 2020</p>
+                </div>
+            </footer>
+        </div>
+    </footer>
+
+
+    <!-- scripts linkage -->
+
+    <script src=" https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="
+                                        sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="
+                                        anonymous "></script>
+    <script src=" https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="
+                                        sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="
+                                        anonymous "></script>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js " integrity="
+                                        sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2 " crossorigin="
+                                        anonymous "></script>
+
+</body>
+<!-- javascript linkage -->
+<script src=" ../JS/main.js "></script>
+
+
+</html>

@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+body {
+    height: 820px;
+    width: 100%;
+}
+
+nav {
+    background-color: #E0F2F1 !important;
+}
+
+nav .external-links .navbar-nav-links li {
+    display: inline-block;
+    padding: 10px;
+}
+
+
+/*  nav .nav-area ul li::after............... */
+
+nav .external-links .navbar-nav-links li::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    display: block;
+    background-color: #000;
+    margin: auto;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+
+/*  background-color: #f44336; */
+
+
+/* nav .nav-area ul li:hover::after...................... */
+
+nav .external-links .navbar-nav-links li:hover::after {
+    width: 100%;
+}
+
+@media only screen and (max-width: 920px) {
+    nav .external-links .navbar-nav-links li:hover::after {
+        width: 0%;
+    }
+}
+
+nav .external-links .navbar-nav-links li a {
+    text-transform: uppercase;
+    color: #000!important;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.carousel-inner {
+    height: 100vh;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #ffffff;
+    padding: 0;
+    margin: 0
+}
+
+.menu {
+    width: 44px;
+    position: relative;
+    top: -10px;
+    height: 3px;
+    background: #00000054;
+    box-shadow: 0px 11px #ff00006b, 1px 22px #66b78d
+}
+
+
+/* nav {
+    padding: 8px;
+    height: 44px;
+    color: #909090;
+    font-weight: lighter;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+} */
+
+h2 {
+    font-weight: lighter;
+}
+
+
+/* header {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15)
+} */
+
+.about {
+    text-align: center;
+    color: gray;
+    padding: 40px;
+    margin-top: 80px;
+}
+
+.about span {
+    display: inline-block;
+    width: 100px;
+    height: 5px;
+    background-color: #4bd482;
+}
+
+.title {
+    font-size: 22px;
+    color: #2c2c2c;
+    padding-bottom: 12px;
+}
+
+.title h1 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.desc {
+    color: #909090;
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 1.45em;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    width: 70%;
+    margin: 0 auto
+}
+
+@media (max-width: 630px) {
+    .title {
+        font-size: 18px
+    }
+}
+
+.row {
+    width: 95%;
+    display: flex;
+    padding: 10px;
+    justify-content: center
+}
+
+@media (max-width: 494px) {
+    .row {
+        flex-direction: column
+    }
+}
+
+.card {
+    display: flex;
+    text-align: center center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    padding: 25px 30px;
+}
+
+.card_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 9px 30px -6px rgba(24, 206, 15, 0.3);
+    position: relative;
+    transition: transform .4s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.card_img img {
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+}
+
+.fas,
+.fab {
+    display: inline-block;
+    position: absolute;
+    color: #63b563;
+    transform: translate(-52%, 75%);
+    font-size: 40px
+}
+
+.card_title {
+    font-size: 20px;
+    margin: 12px;
+    font-weight: bold;
+    color: #000000a8;
+    transition: color 1s;
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+}
+
+.card:hover .card_title {
+    color: #4bd482
+}
+
+.card:hover .card_img {
+    transform: translate(0px, -10px)
+}
+
+.card_body {
+    color: #8c9490;
+    font-size: 16px;
+    padding: 0 5px;
+    line-height: 1.5;
+    word-spacing: 4px
+}
+
+.tops-clothing {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.tops-clothing .section-header span {
+    display: inline-block;
+    width: 100px;
+    height: 5px;
+    background-color: #4bd482;
+}
+
+@media (max-width: 630px) {
+    .tops-clothing .section-header {
+        font-size: 18px;
+    }
+}
+
+.tops-clothing {}
+
+.tops-clothing .section-header {}
+
+.tops-clothing .section-header .description {
+    color: #909090;
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 1.45em;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    width: 70%;
+    margin: 0 auto
+}
+
+.tops-clothing .row {
+    margin: auto;
+}
+
+.tops-clothing .row .card {
+    /* width: 95%;
+    display: flex;
+    padding: 10px; */
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px;
+    padding: 25px 30px;
+}
+
+.tops-clothing .row .card .card-body {
+    color: #8c9490;
+    font-size: 16px;
+    padding: 20 0px;
+    line-height: 0;
+    word-spacing: 2px
+}
+
+.tops-clothing .row .card .card-body .btn button {
+    text-align: left;
+    margin-left: -120px;
+    padding: 8px 30px;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bolder;
+    outline: none;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.tops-clothing .row .card .card-body .btn button:hover {
+    background-color: #4bd482;
+    /* border: 1px solid #fff; */
+}
+
+.tops-clothing .row .card .card-body h5 {
+    text-align: left;
+    margin-left: -100px;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 18px;
+}
+
+
+/* for contact section*/
+
+.contact-section {
+    margin: auto;
+}
+
+.contact-section .container {
+    margin: auto;
+}
+
+.contactus-section-header h1 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.contactus-section-header span {
+    display: inline-block;
+    width: 100px;
+    height: 5px;
+    background-color: #4bd482;
+}
+
+label {
+    color: #333
+}
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 80%;
+    margin-left: 3px
+}
+
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px
+}
+
+.card {
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+.contact-section .container {
+    width: 100%;
+}
+
+.contact-section .container .row {
+    width: 100%;
+    margin: auto;
+}
+
+
+/* for the footer*/
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+footer {
+    /*#383431 */
+    background-color: green!important;
+    color: #FFFFFF !important
+}
+
+small {
+    font-size: calc(12px + (14 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+p {
+    font-size: calc(12px + (14 - 12) * ((100vw - 360px) / (1600 - 360))) !important;
+    color: rgb(196, 193, 193) !important
+}
+
+.social {
+    position: relative;
+    left: -10px
+}
+
+.Subscribe {
+    background-color: #FFFFFF !important;
+    color: #383431 !important;
+    font-weight: bold
+}
+
+li:not(:first-child) {
+    color: rgb(196, 193, 193) !important
+}
+
+footer i {
+    padding: 12px;
+    color: #000;
+}
+
+input {
+    cursor: pointer;
+}
+
+.navbar-nav i {
+    color: #000;
+}
